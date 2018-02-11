@@ -98,25 +98,6 @@ window.onload = function() {
 	window.addEventListener('click', hideForms);
 
 	// прокрутка до header и появление формы регистрации и авторизации при нажатии кнопок в footer
-	/*buttonLoginFooter.addEventListener('click', scrollEndLogin);
-	function scrollEndLogin(){
-		window.addEventListener('scroll', removeScrollEndLogin);
-	};
-	function removeScrollEndLogin(){
-		visibleFormLogin();
-		window.removeEventListener('scroll', removeScrollEndLogin);
-	};
-
-	buttonRegFooter.addEventListener('click', scrollEndFooter);
-	function scrollEndFooter(){
-		window.addEventListener('scroll', removeScrollEndFooter);
-	};
-	function removeScrollEndFooter(){
-		visibleFormReg();
-		window.removeEventListener('scroll', removeScrollEndFooter);
-	};*/
-
-
 	buttonLoginFooter.addEventListener('click', removeScrollEnd.bind(removeScrollEnd, "login"));
 	buttonRegFooter.addEventListener('click', removeScrollEnd.bind(removeScrollEnd, "reg"));
 
@@ -129,5 +110,4 @@ window.onload = function() {
 			};
 		}, 1);
 	}
-	
 }	
