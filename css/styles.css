@@ -1,0 +1,377 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Adelle-Cyrillic;
+  src: url(../fonts/Adelle-Cyrillic-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1170px;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+body .form {
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #444444;
+  border-top: none;
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+  top: 60px;
+  right: 0;
+  background: #656565;
+  max-width: 200px;
+  padding: 10px;
+}
+
+body .form p {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+body .form p input {
+  max-width: 180px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+body .form button {
+  width: 100%;
+}
+
+body .form-login, body .form-reg {
+  display: none;
+}
+
+body .form-login-visible, body .form-reg-visible {
+  display: block;
+}
+
+body .button {
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #fff;
+  border: 1px solid #656565;
+}
+
+body .button:hover {
+  border: 1px solid #b0efe3;
+  color: #b0efe3;
+  text-decoration: underline;
+}
+
+body .button:active {
+  border: 1px solid #9ed8cd;
+  color: #9ed8cd;
+  text-decoration: underline;
+}
+
+body .button-active {
+  border-left: 1px solid #b0efe3;
+  border-right: 1px solid #b0efe3;
+  color: #b0efe3;
+  text-decoration: underline;
+}
+
+body .button-login, body .button-reg, body .button-form-login, body .button-form-reg {
+  border: 1px solid #fff;
+}
+
+body .button-login:hover, body .button-reg:hover, body .button-form-login:hover, body .button-form-reg:hover {
+  background-color: #377369;
+  color: #fff;
+  text-decoration: none;
+}
+
+body .button-login:active, body .button-reg:active, body .button-form-login:active, body .button-form-reg:active {
+  background-color: #2c5c54;
+  color: #fff;
+  text-decoration: none;
+}
+
+body .logo {
+  font-size: 12px;
+  color: #6ee2cb;
+  font-style: italic;
+  float: left;
+}
+
+body .logo::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url(../img/logo.jpg) no-repeat;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+body .logo-footer {
+  opacity: 0.3;
+  float: none;
+  width: 150px;
+  margin: 0 auto;
+}
+
+body h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+body h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+body p {
+  line-height: 18px;
+}
+
+body header {
+  background-color: #656565;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+body header nav {
+  width: 100%;
+  text-align: center;
+}
+
+body header nav ul li {
+  display: inline-block;
+}
+
+body header nav ul li a {
+  margin-right: 5px;
+}
+
+body header .main-button {
+  float: right;
+}
+
+body #sidebar {
+  float: left;
+  background-color: #3d3d3d;
+  padding: 0 0 15px;
+  width: 200px;
+  margin-left: 0;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+body #sidebar.hide {
+  margin-left: -200px;
+  opacity: 0;
+}
+
+body #sidebar .user-interface {
+  background-color: #2c2c2c;
+  padding: 20px 0;
+}
+
+body #sidebar .user-interface p, body #sidebar .user-interface div {
+  color: #fff;
+  margin-left: 10px;
+}
+
+body #sidebar .user-interface > p, body #sidebar .user-interface > div {
+  margin-bottom: 15px;
+}
+
+body #sidebar .user-interface > div p {
+  font-size: 13px;
+}
+
+body #sidebar .user-interface input {
+  margin: 5px;
+}
+
+body #sidebar .user-interface input.font-size {
+  width: 50px;
+  text-align: center;
+}
+
+body #sidebar aside ul {
+  margin-top: 10px;
+}
+
+body #sidebar aside ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+body #sidebar aside ul li a:hover {
+  background-color: #2e2e2e;
+}
+
+body #sidebar aside ul li a:active {
+  background-color: #242424;
+}
+
+body button#sidebar-btn {
+  margin-top: 10px;
+  background-color: #3d3d3d;
+  -webkit-border-radius: 0 5px 5px 0;
+          border-radius: 0 5px 5px 0;
+}
+
+body button#sidebar-btn i {
+  font-size: 25px;
+  padding: 5px;
+  color: #fff;
+}
+
+body main {
+  margin-left: 220px;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+body main.all-width {
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+body footer {
+  margin-top: 30px;
+  background-color: #181818;
+  padding: 20px 0;
+  clear: both;
+  color: #777777;
+}
+
+body footer ul {
+  float: left;
+  z-index: 1000;
+}
+
+body footer ul li {
+  margin-bottom: 10px;
+}
+
+body footer ul .button {
+  color: #777777;
+  border: none;
+}
+
+body footer ul .button:hover {
+  border: none;
+  text-decoration: none;
+}
+
+body footer .main-button-footer {
+  float: right;
+}
+
+body footer .main-button-footer a {
+  color: #777777;
+  border-color: #777777;
+}
+
+@media screen and (max-width: 760px) {
+  body header nav {
+    clear: both;
+  }
+  body main.all-width {
+    mgin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body #sidebar {
+    display: none;
+    float: none;
+    width: 100%;
+    opacity: 0;
+    height: 0;
+  }
+  body #sidebar.hide {
+    display: block;
+    margin-left: 0;
+    opacity: 1;
+    height: auto;
+  }
+  body button#sidebar-btn {
+    width: 100%;
+    margin-top: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    text-align: right;
+  }
+  body button#sidebar-btn i {
+    font-size: 25px;
+    padding: 5px;
+    color: #fff;
+  }
+  body main {
+    margin-left: 0;
+    clear: both;
+  }
+  body main.all-width {
+    margin-left: 0;
+  }
+  body footer .logo-footer {
+    clear: both;
+  }
+}
